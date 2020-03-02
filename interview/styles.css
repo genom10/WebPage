@@ -1,0 +1,13 @@
+/*mistakes page styles*/
+
+#mainDiv {
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: 20vh;
+	margin-bottom: 10vh;
+}
+
+#mainDiv p {
+	text-align: justify;
+	font: normal normal normal 15px/1.67em montserrat,sans-serif;
+}
