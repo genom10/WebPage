@@ -65,7 +65,7 @@ h3{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-image: url("BG.jpg");
+	background-image: url("rab.stol.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -80,7 +80,7 @@ h3{
 	width:100%;
 	max-height:50vh;
 	height: auto;
-	background-image: url(BG.jpg);
+	background-image: url(панорама-москвы.jpg);
 }
 
 #articleDiv #articleHeader *{
@@ -110,3 +110,10 @@ h3{
 	width: 100%;
 	height: 100%;
 }
+
+.picture { 
+	float: center; 
+    margin: 0 0 500px 5px; /* Отступы вокруг фотографии */
+    height:380px; 
+    width: 570px;
+   } 
