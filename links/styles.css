@@ -1,9 +1,107 @@
-/*mistakes page styles*/
+/*links page styles*/
 
-#articleCont {
+
+h3{
+	text-align: center;
+}
+
+.card {
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	min-width: 400px;
+	width: 30%;
+	height: 30%;
+	background: #eee;
+	margin-bottom: 5%;
+	margin-left:1vw;
+	margin-right:1vw;
+	
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.card img {
+	height: 20vw;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	padding: 2px 16px;
+}
+
+.container h3 {
+	text-size-adjust: 50%;
+}
+
+.title {
+	width: 100%;
+}
+
+.aButton{
+	padding: 12px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 4px;
+	height: 50px;
+	min-width: 200px;
+	border-style: solid;
+	border-radius: 25px;
+	border-width: 3px;
+	border-color: black;
+	margin-bottom: 40px;
+}
+
+#mainCont {
+	min-height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	background-image: url("BG.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background-attachment: fixed;
 	background-size: cover;
-	overflow:auto;
+}
+
+#articleDiv{
+	margin:0;
+	padding:0;
+}
+
+#articleHeader{
+	padding: 1px;
+	width:100%;
+	max-height:50vh;
+	height: auto;
+	background-image: url(BG.jpg);
+}
+
+#articleDiv #articleHeader *{
+	text-align: center;
+	color: white;
+}
+
+#articleDiv #articleHeader p{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:40vw;
+	font-size: 18px;
+}
+
+.collTable tr,
+.collTable tr td{
+	height: 20vw;
+	text-align: center;
+}
+
+.collImg{
+	width: 100%;
+	height: 100%;
 }
