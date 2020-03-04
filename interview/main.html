@@ -84,16 +84,37 @@
 </li>
 </ul>
 </header>
-
+<table id = "mainSec">
+	<tr>
+		<td id = "image"></td>
+		<td id = "links">
+			<h3>ИНТЕРВЬЮ</h3>
+			<a href="article01.html" class = "articleLink">Интервью с переводчиком</a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+			<a class = "articleLink"></a>
+		</td>
+	</tr>
+</table>
 </body>
 </html>
 <script>
 window.onscroll = function() {F_log(), F_StickNav()};
-window.onload = function() {F_log(), F_StickNav()};
+window.onload = function() {F_log(), F_StickNav(), F_initButtons()};
 
 var header = document.getElementById("topMenu");
 var MenuEdge = header.offsetTop;
-
 
 function F_log() {
 	//console.log(""+window.pageYOffset + '+' + window.innerHeight/3 + '\t' + ParalEdge);
@@ -109,4 +130,15 @@ function F_StickNav() {
   }
 }
 
+function F_initButtons(){
+	console.log("Initializing buttons");
+	var articleLinks = document.querySelectorAll('.articleLink');
+	console.log(articleLinks);
+	articleLinks.forEach(F_initButton);
+}
+
+function F_initButton(item) {
+	console.log(item);
+	item.innerHTML += '<svg class = "visitStar" version="1.1" viewBox="-25 -6 50 11"><path d=""></path><text x="-9" y="2" font-size="5px" fill="black">Читать!</text></svg>';
+}
 </script>
