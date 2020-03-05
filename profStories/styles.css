@@ -1,9 +1,31 @@
-/*mistakes page styles*/
+/*interview page styles*/
 
 #articleCont {
-	background-image: url("burnaby-library.jpg");
+	background-image: url("iStock-187097352-SCALE.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	overflow:auto;
+}
+
+#mainSec {	
+	min-height:100vh;
+	width:100%;
+}
+
+#image {
+	width:70vw;
+	background-image: url("interview-s-komandoy-azoft.png");	
+	background-size: cover;
+	background-position: center;
+}
+
+#links{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3{
+	text-align: center;
 }

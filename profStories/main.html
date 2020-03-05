@@ -4,6 +4,7 @@
 <title></title>
 <script src="../jquery-3.4.1.min.js"></script>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../nav.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -103,16 +104,37 @@
 </li>
 </ul>
 </header>
-
+<table id = "mainSec">
+	<tr>
+		<td id = "image"></td>
+		<td id = "links">
+			<h3>ИНТЕРВЬЮ</h3>
+			<a href="article01.html" class = "articleLink">Интервью с переводчиком</a>
+			<a href="article02.html" class = "articleLink">Интервью с экономистом</a>
+			<a href="article03.html" class = "articleLink">Интервью с электриком</a>
+			<a href="article04.html" class = "articleLink">Интервью с репетитором</a>
+			<a href="article05.html" class = "articleLink">Интервью с искусствоведом</a>
+			<a href="article06.html" class = "articleLink">Интервью с искусствоведом-2</a>
+			<a href="article07.html" class = "articleLink">Интервью с монахом</a>
+			<a href="article08.html" class = "articleLink">Интервью с менеджером</a>
+			<a href="article09.html" class = "articleLink">Интервью с предпринимателем</a>
+			<a href="article10.html" class = "articleLink">Интервью с адвокатом</a>
+			<a href="article11.html" class = "articleLink">Интервью с фтизиатром</a>
+			<a href="article12.html" class = "articleLink">Интервью с массажистом</a>
+			<a href="article13.html" class = "articleLink">Интервью с реаниматологом</a>
+			<a href="article14.html" class = "articleLink">Интервью с анестезиологом</a>
+			<a href="article15.html" class = "articleLink">Интервью с архитектором</a>
+		</td>
+	</tr>
+</table>
 </body>
 </html>
 <script>
 window.onscroll = function() {F_log(), F_StickNav()};
-window.onload = function() {F_log(), F_StickNav()};
+window.onload = function() {F_log(), F_StickNav(), F_initButtons()};
 
 var header = document.getElementById("topMenu");
 var MenuEdge = header.offsetTop;
-
 
 function F_log() {
 	//console.log(""+window.pageYOffset + '+' + window.innerHeight/3 + '\t' + ParalEdge);
@@ -128,4 +150,15 @@ function F_StickNav() {
   }
 }
 
+function F_initButtons(){
+	console.log("Initializing buttons");
+	var articleLinks = document.querySelectorAll('.articleLink');
+	console.log(articleLinks);
+	articleLinks.forEach(F_initButton);
+}
+
+function F_initButton(item) {
+	console.log(item);
+	item.innerHTML += '<svg class = "visitStar" version="1.1" viewBox="-25 -6 50 11"><path d=""></path><text x="-9" y="2" font-size="5px" fill="black">Читать!</text></svg>';
+}
 </script>
