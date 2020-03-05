@@ -1,4 +1,4 @@
-/*mistakes page styles*/
+/*interview page styles*/
 
 #articleCont {
 	background-image: url("iStock-187097352-SCALE.jpg");
@@ -22,47 +22,8 @@
 
 #links{
 	text-align: center;
-}
-
-.articleLink{
-	text-decoration:none;
-	color: black;
-	font: normal normal normal 25px/1.67em montserrat,sans-serif;
-	margin:10px;
-}
-
-.visitStar{
-	fill: white;
-	stroke: #000;
-	height:88px;
-	margin-bottom:20px;
-}
-
-.visitStar path{
-	transition: 0.2s;
-	d: path("M0,-5 L1.123,-1.545 L4.755,-1.545 L1.816,0.59 L2.939,4.045 L0,1.909 L-2.939,4.045 L-1.816,0.59  L-4.755,-1.545 L-1.123,-1.545 L0,-5 Z");
-    stroke-width: 0.5px;
-}
-
-.visitStar text{
-	display: none;
-    stroke-width: 0.1px;
-}
-
-.articleLink:visited .visitStar{
-	fill: #ff5;
-}
-
-.articleLink:hover .visitStar{
-	fill: #dd3;
-}
-
-.visitStar:hover path{
-	d: path("M15,-5 L16.123,-1.545 L19.755,-1.545 L16.816,0.59 L17.939,4.045 L0,4.045 L-17.939,4.045 L-16.816,0.59  L-19.755,-1.545 L-16.123,-1.545 L-15,-5 Z");
-}
-
-.visitStar:hover text{
-	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h3{

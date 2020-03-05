@@ -120,20 +120,3 @@ a.mainNav:hover {
 p.filler{
 	margin: 50px;
 }
-
-#articleDiv {
-	background-color: white;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	padding-top: 5vh;
-	padding-bottom: 5vh;	
-	margin-left: 15vw;
-	margin-right: 15vw;
-	margin-top: 15vh;
-	margin-bottom: 5vh;
-}
-
-#articleDiv p {
-	text-align: justify;
-	font: normal normal normal 15px/1.67em montserrat,sans-serif;
-}
