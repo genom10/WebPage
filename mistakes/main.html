@@ -84,12 +84,29 @@
 </li>
 </ul>
 </header>
-
+<table id = "mainSec">
+	<tr>
+		<td id = "image"></td>
+		<td id = "links">
+			<h3>ОШИБКИ</h3>
+			<a href="article01.html" class = "articleLink">Отождествление профессии со школьным предметом</a>
+			<a href="article02.html" class = "articleLink">Непрестижность профессии</a>
+			<a href="article03.html" class = "articleLink">Выбор профессии "за компанию"</a>
+			<a href="article04.html" class = "articleLink">Импульсивность и хаотичность</a>
+			<a href="article05.html" class = "articleLink">Перенос личных отношений на профессию</a>
+			<a href="article06.html" class = "articleLink">Отсутствие попыток прогнозирования</a>
+			<a href="article07.html" class = "articleLink">Влияние чужого авторитета</a>
+			<a href="article08.html" class = "articleLink">Недооценка физических способностей</a>
+			<a href="article09.html" class = "articleLink">Влияние сверстников</a>
+			<a href="article10.html" class = "articleLink">Фокусирование на частной стороне</a>
+		</td>
+	</tr>
+</table>
 </body>
 </html>
 <script>
 window.onscroll = function() {F_log(), F_StickNav()};
-window.onload = function() {F_log(), F_StickNav()};
+window.onload = function() {F_log(), F_StickNav(); F_initButtons()};
 
 var header = document.getElementById("topMenu");
 var MenuEdge = header.offsetTop;
@@ -109,4 +126,15 @@ function F_StickNav() {
   }
 }
 
+function F_initButtons(){
+	console.log("Initializing buttons");
+	var articleLinks = document.querySelectorAll('.articleLink');
+	console.log(articleLinks);
+	articleLinks.forEach(F_initButton);
+}
+
+function F_initButton(item) {
+	console.log(item);
+	item.innerHTML += '<svg class = "visitStar" version="1.1" viewBox="-25 -6 50 11"><path d=""></path><text x="-9" y="2" font-size="5px" fill="black">Читать!</text></svg>';
+}
 </script>
