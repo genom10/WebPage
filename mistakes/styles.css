@@ -34,6 +34,7 @@
 }
 
 .visitStar{
+	width: 100%;
 	fill: white;
 	stroke: #000;
 	height:88px;
