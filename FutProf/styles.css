@@ -1,0 +1,9 @@
+/*mistakes page styles*/
+
+#articleCont {
+	background-image: url("burnaby-library.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow:auto;
+}

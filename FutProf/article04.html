@@ -38,7 +38,6 @@
 		<a href="../mistakes/article08.html">Недооценка физических способностей</a>
 		<a href="../mistakes/article09.html">Влияние сверстников</a>
 		<a href="../mistakes/article10.html">Фокусирование на частной стороне</a>
-		<a href="../mistakes/article11.html">Трудности в определении собственных возможностей</a>
 	</div>
 </li>
 <li>
@@ -104,30 +103,29 @@
 </li>
 </ul>
 </header>
-<div id = mainDiv>
-	<div class = parallaxBox>
-		<p id = qtext>Кем стать? Как выбрать профессию и не ошибиться? Как спрогнозировать тенденции развития той или иной профессии? В чём плюсы и минусы разных специальностей? Обо всём этом вы сможете узнать на нашем сайте. </p>	
-			<div class = semitransp>
-			<h1>профессиональное самоопределение</h1>
-			<p>Профессиональное самоопределение – личный выбор человека в приобретении профессии и реализации себя на рынке труда. На нашем сайте представлено много полезной информации о профессиях различных видов и отраслей, интервью с профессионалами, чьи советы и пожелания могут помочь вам на этом отрезке выбора своего дальнейшего пути, ссылки на тесты и другие обучающие материалы, связанные с личностно-профессиональной перспективой. Мы действительно надеемся, что наш сайт поможет вам и пробудит в вас стремление найти окончательный ответ.</p>
-			
-			</div>
-		<div class = parallaxBG id = parallaxBG></div>
-	</div>
+<div id = articleCont>
+<div id = articleDiv>
+<h3>
+<h1>
+	<h3>ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</h3>
+	<p>
+Искуственный интеллект - способность механических объектов воспроизводить механизмы мышления, характерные для человека.
+<br>
+В настоящее время уже существуют роботы и компьютерные программы, способные играть в шахматы, отвечать на вопросы человека и выполнять прочие функции, подобные человеческим. ИИ используется в финаносовом и военном деле, в тяжёлой промышленности, медицине, сфере транспорта и развлечений, притом это далеко не полный список, поскольку технологии стремительно развиваются - и вы можете в этом поучаствовать.
+<br>
+<br>
+Сфере ИИ требуются как программисты - формальные исполнители задумки, авторы кода, так и представители гуманитарных и естественных наук, разрешающие проблемы функционирования ИИ, области его применения, вопросы этики и пр.
+</p>
 </div>
 </body>
 </html>
 <script>
-window.onscroll = function() {F_log(), F_StickNav(), F_Parallax()};
-window.onload = function() {F_log(), F_StickNav(), F_Parallax()};
+window.onscroll = function() {F_log(), F_StickNav()};
+window.onload = function() {F_log(), F_StickNav()};
 
 var header = document.getElementById("topMenu");
 var MenuEdge = header.offsetTop;
 
-var parallaxBox = document.getElementById("mainDiv");
-var parallaxBG = document.getElementById("parallaxBG");
-var ParalEdge = parallaxBox.offsetTop;
-var ParalBEdge = ParalEdge + parallaxBox.offsetHeight;
 
 function F_log() {
 	//console.log(""+window.pageYOffset + '+' + window.innerHeight/3 + '\t' + ParalEdge);
@@ -141,11 +139,6 @@ function F_StickNav() {
     header.classList.remove("sticky");
 	header.parentElement.style.paddingBottom = null;
   }
-}
-
-function F_Parallax() {
-	//console.log(`translateY(${(window.pageYOffset - ParalEdge) * -150 / (window.innerHeight * 2) + 75}px)`);
-	parallaxBG.style.transform = "" + `translateY(${(window.pageYOffset) * -55 / (window.innerHeight) + 60}px)`;
 }
 
 </script>
