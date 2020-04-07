@@ -48,28 +48,6 @@
 }
 
 .semitransp {
-	min-height: 95vh;
 	background-color: rgba(0,0,0,0.7);
 	text-align: center;
-}
-
-#cont {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	border-collapse: collapse;
-}
-
-#cont td{
-  border-right: 1px solid #fff;
-  padding: 10px;
-}
-
-
-#cont tr td p{
-	font-size:25pt;
-	margin: 10px;
-}
-
-#cont td:last-child{
-  border-right: 0px none;
 }
